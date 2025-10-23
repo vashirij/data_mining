@@ -1,4 +1,4 @@
-# Study Guide — preprocessing_3.ipynb
+# Study Guide —intro_3.ipynb
 
 This study guide walks through the key topics covered in `preprocessing_3.ipynb` (Introduction to Python, NumPy basics, and Pandas fundamentals). Use this as a compact reference and practice resource.
 
