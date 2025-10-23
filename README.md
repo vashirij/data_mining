@@ -199,6 +199,3 @@ docker run -p 8080:8080 mymodel:latest
 - MLflow for experiment tracking: https://mlflow.org/
 - Scikit-learn Pipelines: https://scikit-learn.org/stable/modules/compose.html
 
-----
-
-If you want, I will commit this README, or I can tailor sections further (add example scripts, `requirements.txt`, or a template `train.py`).
