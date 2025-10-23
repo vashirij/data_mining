@@ -5,6 +5,7 @@ This repository contains example datasets and notebooks used to teach data prepr
 ## Table of contents
 
 - Business understanding
+- Core concepts in data mining
 - Data collection & ingestion
 - Data understanding & exploration
 - Data preparation (preprocessing & scaling)
@@ -12,6 +13,44 @@ This repository contains example datasets and notebooks used to teach data prepr
 - Deployment & monitoring
 - Repository structure and how to run
 - Reproducibility, testing & next steps
+
+## Core concepts in data mining
+
+Below are concise explanations of key topics you should understand and be able to apply in practical projects.
+
+1. Data pre-processing
+
+	- Data acquisition: methods to collect and ingest data (APIs, scraping, batch exports, sensors). Capture provenance (source, timestamp, query). Prefer storing raw snapshots.
+	- Data labeling: approaches for supervised tasks — manual annotation, weak supervision, heuristics, and using existing labels. Track label quality and inter-annotator agreement.
+	- Data cleaning: remove/handle duplicates, correct typos, standardize formats (dates, categorical names), remove outliers or correct them after domain checks.
+	- Data transformation: type conversions, parsing complex fields, normalization, log transforms, one-hot encoding or ordinal coding for categories.
+	- Feature engineering: create informative features by aggregating, extracting from text/dates, binning, polynomial interactions, or domain-specific encodings.
+
+2. Classification and regression
+
+	- Supervised learning tasks: classification for categorical targets and regression for continuous targets.
+	- Common algorithms: logistic regression, decision trees, random forests, gradient-boosted trees (XGBoost/LightGBM/CatBoost), linear regression, neural networks.
+	- Feature-target relationships: inspect feature importance, partial dependence plots, and residuals (for regression) to find biases.
+
+3. Model validation and combination
+
+	- Validation strategies: holdout splits, k-fold cross-validation, stratified sampling, and time-series-aware splits.
+	- Metrics: choose metrics tied to the business problem (precision/recall/F1, AUC, RMSE, MAE, calibration).
+	- Combination/ensembling: bagging, boosting, stacking, and simple model averaging to improve stability and performance.
+	- Hyperparameter search: grid search, random search, and Bayesian optimization; use nested CV when tuning to avoid leakage.
+
+4. Data reduction
+
+	- Clustering: unsupervised grouping (KMeans, DBSCAN, hierarchical clustering) for segmentation and exploratory analysis.
+	- Dimensionality reduction: PCA, t-SNE, UMAP for visualization and to reduce noise; beware information loss.
+	- Feature selection: filter methods (correlation, mutual information), wrapper methods (recursive feature elimination), and embedded methods (L1 regularization, tree-based importance).
+
+5. Association rule mining
+
+	- Frequent itemset mining and association rules (Apriori, FP-Growth) to extract co-occurrence patterns (market-basket analysis).
+	- Interpret rules with support, confidence, and lift; prune redundant and insignificant rules.
+	- Applications: recommender systems, cross-sell analysis, and anomaly detection in transactional data.
+
 
 ## 1) Business understanding
 
